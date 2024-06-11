@@ -8,7 +8,9 @@ function Posts() {
 
     useEffect (() => { //runs when component is mount
         const fetchPosts = async () => { //handles data fetch
-
+            try { //statrs try block
+                const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+            }
         }
     }
 
