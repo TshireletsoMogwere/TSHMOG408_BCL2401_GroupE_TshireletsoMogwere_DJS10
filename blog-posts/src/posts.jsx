@@ -13,6 +13,7 @@ function Posts() {
                 if (!response.ok) { 
                     throw new Error('Failed to fetch posts');
                 }
+                const data = await response.json(); //parses json body of response and stores in data variable
             }
         }
     }
