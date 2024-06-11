@@ -15,6 +15,9 @@ function Posts() {
                 }
                 const data = await response.json(); //parses json body of response and stores in data variable
                 setPosts(data); //updates posts' state with fetched data
+
+            } catch (error) { // starts catch block
+                setError(error.message) // displays error message to user
             }
         }
     }
