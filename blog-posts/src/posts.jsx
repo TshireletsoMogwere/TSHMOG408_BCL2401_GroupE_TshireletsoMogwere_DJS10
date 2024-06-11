@@ -23,11 +23,14 @@ function Posts() {
         fetchPosts();
     }, []); 
 
-    
+    if (error) {
+        return <div>Error: {error}</div>; // returns a div element displaying error message
+    }
+
     return (
         <>
         </>
     )
-}
 
+}
 export default Posts
