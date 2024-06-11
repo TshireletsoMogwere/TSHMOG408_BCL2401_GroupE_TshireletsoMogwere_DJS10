@@ -19,11 +19,11 @@ function Posts() {
             } catch (error) { // starts catch block
                 setError(error.message) // displays error message to user
             }
-        }
-    }
+        };
+        fetchPosts();
+    }, []); 
 
-    )
-
+    
     return (
         <>
         </>
