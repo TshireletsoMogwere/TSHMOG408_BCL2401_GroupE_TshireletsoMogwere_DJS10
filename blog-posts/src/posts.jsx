@@ -5,6 +5,15 @@ function Posts() {
     const [posts, setPosts] = useState([]);
     // Initializes storing of error messages when data fetching fails
     const [error, setError] = useState(null)
+
+    useEffect (() => { //runs when component is mount
+        const fetchPosts = async () => { //handles data fetch
+
+        }
+    }
+
+    )
+
     return (
         <>
         </>
