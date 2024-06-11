@@ -14,6 +14,7 @@ function Posts() {
                     throw new Error('Failed to fetch posts');
                 }
                 const data = await response.json(); //parses json body of response and stores in data variable
+                setPosts(data); //updates posts' state with fetched data
             }
         }
     }
